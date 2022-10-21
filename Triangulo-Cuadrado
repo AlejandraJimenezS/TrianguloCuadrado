@@ -1,0 +1,33 @@
+int main() {
+   int columna = 1;
+   int fila = 5;
+
+   //Ciclo externo, controla la impresión de las filas o lineas.
+   while(fila >= 1){
+
+   	//Ciclo interno, controla la impresion de las columnas.
+   	while(columna <= 5){
+    
+  		//Define la condición para que inserte el espacio o el asterisco.
+      //Usar las dos variables (columna y fila).
+      //Pista: Ver relacion de como la variable columna siempre va de los valores 1 al 5.
+      //Contrafila empieza en 1 en la primer linea, 2 en la segunda y así sucesivamente.
+      
+      if( columna >= fila ){
+        printf("*");
+      }
+      else{
+        printf(" ");
+      }
+
+  		columna++;
+  	}
+
+  	//se reinicia el valor de columna a 1
+  	columna = 1;
+  	//se hace un salto de linea
+  	printf("\n");
+  	fila--;
+	}
+
+}
